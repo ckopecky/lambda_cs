@@ -31,18 +31,20 @@ books = ['Duck', 'Jackal', 'Hippo', 'Aardvark', 'Cat', 'Flamingo', 'Iguana', 'Gi
 
 
 ##########
-# O(1)
+# O(1) - Constant time
 ##########
 
 # Return the name of all books
 def getBooks():
   return books
-
+# no matter how bog your input, it will always take the same amount of time to return. This is constant time. You're only pointint to
+# the beginning of the list and saying 'hey, this is where this list starts!;
 
 ##########
-# O(n)
+# O(n) - Linear time
 ##########
-
+#we touch each entry one at a time. n represents the size of our input. We go through each entry and do something. If we add 
+#another instruction, the order is still linear. Technically, it's O(2n)...but we don't care about the 2. 
 # Returns the number of books
 def getNumBooks():
   num_books = 0
